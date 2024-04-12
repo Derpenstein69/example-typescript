@@ -4,11 +4,12 @@
     "module": "CommonJS",
     "allowJs": true,
     "checkJs": true,
-    "types": ["@testing-library/jest-dom"],
+    "types": ["@testing-library/jest-dom",
+    "readline"],
     "forceConsistentCasingInFileNames": true,
     "outDir": "./dist",
     /* Type Checking */
-    "strict": false,
+    "strict": true,
     "skipLibCheck": true,
     /* Skip type checking all .d.ts files. */
     "jsx": "react"
