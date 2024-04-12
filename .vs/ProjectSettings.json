@@ -1,0 +1,22 @@
+/**
+ * Jest configuration file.
+ * This file is used to configure Jest for testing purposes.
+ * It specifies the roots of the project, the test match patterns,
+ * the transformations to apply, the module name mappings, and the test environment.
+ */
+{
+  "roots": [
+    "<ROOT_DIR>"
+  ],
+  "testMatch": [
+    "**/__tests__/**/*.+(ts|tsx|js)",
+    "**/?(*.)+(spec|test).+(ts|tsx|js)"
+  ],
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+  },
+  "testEnvironment": "jsdom"
+}
